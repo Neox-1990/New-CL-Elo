@@ -1,0 +1,320 @@
+@CHARSET "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+*:link, *:visited{
+	text-decoration:none;
+	color:#000;
+}
+.float-clear{
+	float:clear;
+}
+body{
+	font-family:Verdana, sans-serif;
+}
+noscript{
+	margin:5px;
+}
+div#mainframe{
+	display:block;
+	width:980px;
+	padding:9px;
+	margin:20px auto;
+	background-color:#EEE;
+	-webkit-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 5px 10px 5px 0px rgba(0,0,0,0.3);
+	border-radius:10px;
+	border:1px solid #888;
+}
+header{
+	margin:30px 0px;
+}
+header>p:nth-child(1){
+	font-family: "Arial", sans-serif;
+	font-size:12px;
+	margin-left:10px;
+}
+header>p:nth-child(2){
+	font-family: "Arial Black", sans-serif;
+	font-weight:900;
+	font-size:64px;
+	margin-top:-14px;
+}
+nav{
+	width:980px;
+	height:40px;
+	margin-left:-9px;
+	padding:5px 9px;
+	background-color:#888;
+}
+nav>a{
+	display:block;
+	float:left;
+	text-align:center;
+	padding-top:7px;
+	font-family: "Arial Black", sans-serif;
+	font-weight:900;
+	font-size:20px;
+	width:225px;
+	height:33px;
+	background-color:#DDD;
+	border-radius:5px;
+	margin-right:20px;
+}
+nav>a.red:hover{
+	background-color:#D44;
+}
+nav>a.green:hover{
+	background-color:#4B4;
+}
+nav>a.blue:hover{
+	background-color:#48F;
+}
+nav>a.yellow:hover{
+	background-color:#DC4;
+}
+section{
+	margin:0px 0px 2em 0px;
+}
+section>p{
+	text-align:justify;
+	text-size:16px;
+	margin:1em 0px;
+}
+footer{
+	width:980px;
+	height:15px;
+	margin-left:-9px;
+	margin-bottom:15px;
+	padding:2px 9px;
+	background-color:#888;
+}
+footer>p{
+	text-align:right;
+	font-size:12px;
+	color:#EEE;
+}
+footer a.redtext:hover{
+	color:#D44;
+}
+footer a.greentext:hover{
+	color:#4B4;
+}
+footer a.bluetext:hover{
+	color:#48F;
+}
+footer a.yellowtext:hover{
+	color:#DC4;
+}
+footer a.redtext{
+	color:#EEE;
+}
+footer a.greentext{
+	color:#EEE;
+}
+footer a.bluetext{
+	color:#EEE;
+}
+footer a.yellowtext{
+	color:#EEE;
+}
+h1{	
+	margin:0px -9px 10px -9px;
+	padding:15px 9px 5px 9px;
+	width:980px;
+	font-weight:bolder;
+	font-size:36px;
+}
+h2{	
+	display:inline;
+	margin:10px auto 10px -9px;
+	width:auto;
+	padding:15px 9px 5px 9px;
+	font-weight:bold;
+	font-size:24px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+h1.red,h2.red{
+	background-color:#D44;
+}
+h1.green,h2.green{
+	background-color:#4B4;
+}
+h1.blue,h2.blue{
+	background-color:#48F;
+}
+h1.yellow,h2.yellow{
+	background-color:#DC4;
+}
+/**************************************************/
+/**********Overview********************************/
+table#overview{
+	width:900px;
+	margin:50px auto;
+	border-collapse: collapse;
+	border:2px solid #000;
+}
+table#overview th,table#overview tr,table#overview td{
+	border-collapse: collapse;
+	border:1px solid #000;
+}
+table#overview th, table#overview td{
+	padding:3px 10px;
+}
+table#overview th{
+	background-color:#4B4;
+}
+th#poshead, th#namehead, th#elohead{
+	font-weight:bold;
+	font-size:20px;
+}
+th#rhead, th#fhead{
+	font-weight:bold;
+	font-size:14px;
+}
+th#frhead{
+	font-weight:bold;
+	font-size:12px;
+}
+th#frhead p{
+	margin:-5px 0px;
+}
+th#poshead, td.poscell, th#elohead, td.elocell, th#fhead, td.fcell, th#rhead, td.rcell, th#frhead, td.frcell{
+	text-align:center;
+}
+th#namehead, td.namecell{
+	text-align:left;
+}
+table#overview tr:nth-child(2n){
+	background-color:#DDD;
+}
+table#overview tr:nth-child(2n+1){
+	background-color:#BBB;
+}
+table#overview tr:hover{
+	font-weight:bold;
+	background-color:#4B4;
+}
+/**************************************************/
+/**********showSingleDriver************************/
+table#driverinfo{
+	width:900px;
+	margin:20px auto;
+	border-collapse: collapse;
+	border:2px solid #000;
+}
+table#driverinfo th,table#driverinfo tr,table#driverinfo td{
+	border-collapse: collapse;
+	border:1px solid #000;
+}
+table#driverinfo td{
+	padding:5px 10px;
+	min-height:32px;
+}
+table#driverinfo td#infoheader{
+	font-size:36px;
+	font-weight:600;
+	text-align:left;
+	background-color:#4B4;
+}
+table#driverinfo td#infoheader>img{
+	margin-left:140px;
+	margin-top: 4px;
+	margin-bottom: -4px;
+}
+table#driverinfo td.top{
+	text-align:right;
+}
+table#driverinfo td.info{
+	text-align:left;
+}
+table#driverinfo td.top, table#driverinfo td.info{
+	font-weight:bold;
+	font-size:14px;
+}
+table#driverinfo td.info img{
+	width:16px;
+	height:16px;
+	margin-left:16px;
+}
+table#driverinfo td#positions{
+	maring:0px;
+	padding:0px;
+	width:500px;
+	height:200px;
+	background-color:#FFF;
+}
+table#driverinfo td#history{
+	margin:0px;
+	padding:0px;
+	width:900px;
+	height:500px;
+	background-color:#FFF;
+}
+/* posistionchart */
+#chart{
+	width:500px;
+	height:200px;
+}
+.posBar{
+	fill:#4B4;
+}
+.axis{
+	font:8px sans-serif;
+}
+.axis path, .axis line{
+	fill: none;
+	stroke:#000;
+	shape-rendering:crispEdges;
+}
+.axislable{
+	font:12px sans-serif;
+}
+.y .tick line{
+	stroke:#DDD;
+}
+.barText{
+	font:8px sans-serif;
+}
+/* donutchart */
+.arc path{
+	fill:#EEE;
+	stroke-width:1px;
+	stroke:#000;
+	shape-rendering:geometricPrecision;
+}
+.arc path:hover{
+	fill:#4B4;
+	stroke-width:1px;
+	stroke:#000;
+	shape-rendering:geometricPrecision;
+}
+text.donutInnerText{
+	font:14px sans-serif;
+}
+/* history graph */
+#graph{
+	width:900px;
+	height:502px;
+}
+.line{
+	fill:none;
+	stroke:#4B4;
+	stroke-width:1px;
+}
+.eventPoint circle{
+	stroke:none;
+	fill:#4B4;
+}
+.eventPoint circle:hover{
+	stroke:#000;
+	fill:#4B4;
+	stroke-width:1px;
+}
+.hoverInfo{
+	font:12px sans-serif;
+}
